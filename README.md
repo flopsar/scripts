@@ -41,8 +41,12 @@ Scripts are intended to be used on RedHat/Centos distros, however they can be ea
 Services are started automatically at system boot.
 You can manually start/stop Flopsar either from root or dedicated user account.
 * As root
+```bash
 [root@host ~]# service flopsar-dbase {start|stop|status}
 [root@host ~]# service flopsar-proxy {start|stop|status}
+```
 * As dedicated user
+```bash
 [flopsar@host ~]$ /opt/flopsar/flopsar-dbase.sh {start|stop|status}
 [flopsar@host ~]$ /opt/flopsar/flopsar-proxy.sh {start|stop|status}
+```
